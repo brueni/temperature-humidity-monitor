@@ -23,4 +23,3 @@ rrdtool create temp-humid.rrd \
     RRA:MAX:0.5:48:124 \
     RRA:MAX:0.5:144:186 \
     RRA:MAX:0.5:288:365
-#JustATest
