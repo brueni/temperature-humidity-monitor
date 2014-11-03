@@ -1,8 +1,9 @@
 #!/bin/bash
 
 #Execute every 300sec to update values from python-script to RRD
-
+#Store Output from python file in 'output' variable
 output=$(python get_sensor_values.py 11 4)
 
-echo "test"
-echo $output
+#execute RRD update
+$(rrdtool update temp-humid.rrd $output)
+
