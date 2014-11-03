@@ -1,0 +1,4 @@
+#Just a bin for different RRD-graph commands
+
+sudo rrdtool graph '/var/www/graph.png' --width '400' --height '100' --start end-3600s 'DEF:h1d=temp-humid.rrd:humid:AVERAGE' 'DEF:t1d=temp-humid.rrd:temp:AVERAGE' 'LINE:h1d#9933FF' 'LINE:t1d#FF0000'
+

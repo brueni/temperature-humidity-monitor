@@ -6,4 +6,4 @@ output=$(python get_sensor_values.py 11 4)
 
 #execute RRD update
 $(rrdtool update temp-humid.rrd $output)
-
+echo $output
