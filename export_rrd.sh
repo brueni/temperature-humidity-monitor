@@ -35,7 +35,7 @@ XPORT:a:"Testraum" > www/data/t3m.xml
 #Temp, 1y
 rrdtool xport -s now-1year -e now --step 86400 \
 DEF:a=temp-humid.rrd:temp:AVERAGE \
-XPORT:a:"Testraum" > www/data/t3y.xml
+XPORT:a:"Testraum" > www/data/t1y.xml
 
 #Humid, 3h
 rrdtool xport -s now-3h -e now --step 300 \
@@ -70,6 +70,6 @@ XPORT:a:"Testraum" > www/data/h3m.xml
 #Humid, 1y
 rrdtool xport -s now-1year -e now --step 86400 \
 DEF:a=temp-humid.rrd:humid:AVERAGE \
-XPORT:a:"Testraum" > www/data/h3y.xml
+XPORT:a:"Testraum" > www/data/h1y.xml
 
 
