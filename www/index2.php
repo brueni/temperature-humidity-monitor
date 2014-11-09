@@ -14,41 +14,41 @@
 		<!-- 2. Add the JavaScript to initialize the chart on document ready -->
 		<script type="text/javascript">
 		$.ajax({
-    type: "GET",
-    url: "data/temperature24h.xml",
-    dataType: "xml",
-    success: function(xml) {
-        var series = []
- 
-        //define series
-        $(xml).find("entry").each(function() {
-            var seriesOptions = {
-                name: $(this).text(),
-                data: []
-            };
-            options.series.push(seriesOptions);
-        });
- 
-        //populate with data
-        $(xml).find("row").each(function() {
-            var t = parseInt($(this).find("t").text()) * 1000
- 
-            $(this).find("v").each(function(index) {
-                var v = parseFloat($(this).text())
-                v = v || null
-                if (v != null) {
-                    options.series[index].data.push([t, v])
-                };
-            });
-        });
- 
-        options.title.text = "Temperatures of the last 24h"
-        $.each(series, function(index) {
-            options.series.push(series[index]);
-        });
-        chart = new Highcharts.Chart(options);
-    }
-})
+		    type: "GET",
+		    url: "data/temperature3h.xml",
+		    dataType: "xml",
+		    success: function(xml) {
+		        var series = []
+		 
+		        //define series
+		        $(xml).find("entry").each(function() {
+		            var seriesOptions = {
+		                name: $(this).text(),
+		                data: []
+		            };
+		            options.series.push(seriesOptions);
+		        });
+		 
+		        //populate with data
+		        $(xml).find("row").each(function() {
+		            var t = parseInt($(this).find("t").text()) * 1000
+		 
+		            $(this).find("v").each(function(index) {
+		                var v = parseFloat($(this).text())
+		                v = v || null
+		                if (v != null) {
+		                    options.series[index].data.push([t, v])
+		                };
+		            });
+		        });
+		 
+		        options.title.text = "Temperatures of the last 3h"
+		        $.each(series, function(index) {
+		            options.series.push(series[index]);
+		        });
+		        chart = new Highcharts.Chart(options);
+		    }
+		})
 		</script>
 		
 	</head>
