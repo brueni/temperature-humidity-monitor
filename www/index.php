@@ -19,7 +19,7 @@
 			var options = {
 				chart: {
 					renderTo: 'container',
-					type: 'column'
+					defaultSeriesType: 'column'
 				},
 				title: {
 					text: 'Temperature'
@@ -29,7 +29,7 @@
 				},
 				yAxis: {
 					title: {
-						text: 'Units'
+						text: 'Deg C'
 					}
 				},
 				series: []
@@ -42,9 +42,9 @@
 				var $xml = $(xml);
 				
 				// push categories
-				$xml.find('categories item').each(function(i, category) {
-					options.xAxis.categories.push($(category).text());
-				});
+				//$xml.find('categories item').each(function(i, category) {
+				//	options.xAxis.categories.push($(category).text());
+				//});
 				
 				// push series
 				$xml.find('data').each(function(i, series) {
@@ -56,9 +56,8 @@
 					// push data points
 					$(series).find('row v').each(function(i, point) {
 						seriesOptions.data.push(
-							parseInt($(point).text())
+							parseFloat($(point).text())
 						);
-					});
 					
 					// add it to the options
 					options.series.push(seriesOptions);

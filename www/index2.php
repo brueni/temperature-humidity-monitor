@@ -12,10 +12,13 @@
 		
 		
 		<!-- 2. Add the JavaScript to initialize the chart on document ready -->
+		<script src="functions.js" type="text/javascript"></script>   
 		<script type="text/javascript">
+		
+
 		$.ajax({
 		    type: "GET",
-		    url: "data/temperature3h.xml",
+		    url: "humid1d.xml",
 		    dataType: "xml",
 		    success: function(xml) {
 		        var series = []
