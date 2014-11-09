@@ -55,22 +55,22 @@
 				<b>Temperatures</b><br>
 				<ul>
 					<li><a href="?type=t&range=3h">Last 3h</a></li>
-					<li>Last 24h</li>
-					<li>Last 48h</li>
-					<li>Last 1w</li>
-					<li>Last 1m</li>
-					<li>Last 3m</li>
-					<li>Last 1y</li>
+					<li><a href="?type=t&range=24h">Last 24h</a></li>
+					<li><a href="?type=t&range=48h">Last 48h</a></li>
+					<li><a href="?type=t&range=1w">Last 1w</a></li>
+					<li><a href="?type=t&range=1m">Last 1m</a></li>
+					<li><a href="?type=t&range=3m">Last 3m</a></li>
+					<li><a href="?type=t&range=1y">Last 1y</a></li>
 				</ul>
 				<b>Humidity</b><br>
                                 <ul>
-                                        <li>Last 3h</li>
-                                        <li>Last 24h</li>
-                                        <li>Last 48h</li>
-                                        <li>Last 1w</li>
-                                        <li>Last 1m</li>
-                                        <li>Last 3m</li>
-                                        <li>Last 1y</li>
+                                        <li><a href="?type=h&range=3h">Last 3h</a></li>
+                                        <li><a href="?type=h&range=24h">Last 24h</a></li>
+                                        <li><a href="?type=h&range=48h">Last 48h</a></li>
+                                        <li><a href="?type=h&range=1w">Last 1w</a></li>
+                                        <li><a href="?type=h&range=1m">Last 1m</a></li>
+                                        <li><a href="?type=h&range=3m">Last 3m</a></li>
+                                        <li><a href="?type=h&range=1y">Last 1y</a></li>
                                 </ul>
 
 			</div>
