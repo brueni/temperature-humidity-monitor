@@ -1,4 +1,4 @@
-rrdtool create temp-humid.rrd \
+rrdtool create data/temp-humid.rrd \
     --step 300 \
     DS:temp:GAUGE:600:-40:50 \
     DS:humid:GAUGE:600:0:100 \
