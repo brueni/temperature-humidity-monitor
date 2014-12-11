@@ -5,3 +5,21 @@ It's based on the following Adafruit-Tutorial:
 https://learn.adafruit.com/downloads/pdf/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging.pdf
 
 It has been extended to the functionality to log the values to a RRD-Database
+
+Prerequisites
+====
+```
+git clone https://github.com/adafruit/Adafruit_Python_DHT.git
+cd Adafruit_Python_DHT
+sudo apt-get upgrade
+sudo apt-get install build-essential python-dev
+sudo python setup.py install
+```
+
+Installation
+====
+```
+https://github.com/brueni/temperature-humidity-monitor
+```
+Create your RRD-File using init-rrd1 (change name and location as desired)
+
