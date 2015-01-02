@@ -65,9 +65,17 @@ function GetChartXml() {
     case "h1m":
     case "h3m":
     case "h1y":
-        return "data/" + urlParameter + ".xml";
+    case "f3h":
+    case "f24h":
+    case "f48h":
+    case "f1w":
+    case "f1m":
+    case "f3m":
+    case "f1y":
+
+        return "data/rack_" + urlParameter + ".xml";
     }
-    return "data/t24h.xml";
+    return "data/rack_t24h.xml";
 }
 
 function GetChartTitle() {
