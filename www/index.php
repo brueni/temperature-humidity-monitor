@@ -38,7 +38,6 @@
 		                };
 		            });
 		        });
-		 
 		        options.title.text = "Temperatures of the last xyh"
 		        $.each(series, function(index) {
 		            options.series.push(series[index]);
@@ -52,6 +51,8 @@
 	<body>
 		<div id="site">
 			<div id="navigation" style="width: 20%; heigth:400px; margin: 0 auto">
+			<table><tr>
+				<td>
 				<b>Temperatures</b><br>
 				<ul>
 					<li><a href="?t3h">Last 3h</a></li>
@@ -62,6 +63,7 @@
 					<li><a href="?t3m">Last 3m</a></li>
 					<li><a href="?t1y">Last 1y</a></li>
 				</ul>
+				</td><td>
 				<b>Humidity</b><br>
                                 <ul>
                                         <li><a href="?h3h">Last 3h</a></li>
@@ -72,6 +74,19 @@
                                         <li><a href="?h3m">Last 3m</a></li>
                                         <li><a href="?h1y">Last 1y</a></li>
                                 </ul>
+				</td><td>
+				<b>Fanspeed</b><br>
+                                <ul>
+                                        <li><a href="?f3h">Last 3h</a></li>
+                                        <li><a href="?f24h">Last 24h</a></li>
+                                        <li><a href="?f48h">Last 48h</a></li>
+                                        <li><a href="?f1w">Last 1w</a></li>
+                                        <li><a href="?f1m">Last 1m</a></li>
+                                        <li><a href="?f3m">Last 3m</a></li>
+                                        <li><a href="?f1y">Last 1y</a></li>
+                                </ul>
+				</td>
+			</tr></table>
 
 			</div>
 			<div id="container" style="width: 80%; height: 400px; margin: 0 auto"></div>
